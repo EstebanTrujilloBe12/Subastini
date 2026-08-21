@@ -3,9 +3,8 @@ services:
     runtime: node
     name: subastini
     plan: free
-    buildCommand: npm ci
+    buildCommand: npm install
     startCommand: npm start
-    healthCheckPath: /healthz
     autoDeploy: true
     envVars:
       - key: NODE_ENV
